@@ -2,20 +2,20 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Marco Antonio Florenzano Mollinetti
+Marco Mollinetti
+Senior Data Scientist / AI Engineer
 
 Show Contacts
 
 Email
-richard@example.com
+marco.mollinetti@gmail.com
 
 Phone
-+1 (213) 352-2795
++81 (080) 5670-8475
 
 Birthday
-June 23, 1982
+January 22, 1993
 
 Location
 Sacramento, California, USA
@@ -34,7 +34,7 @@ About me
 
 I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created Game design for many famous brand companies.
 
 
 ## service
@@ -42,7 +42,7 @@ My job is to build your website so that it is functional and user-friendly but a
 What i'm doing
 
 alt = design icon
-Web design
+Game design
 The most modern and high-quality design made at a professional level.
 
 alt = Web development icon
@@ -115,13 +115,13 @@ Art director
 2013 — 2015
 Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
 
-Web designer
+Game designer
 2010 — 2013
 Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
 
 My skills
 
-Web design
+Game design
 80%
 Graphic design
 70%
@@ -137,13 +137,13 @@ WordPress
 Portfolio
 
 All
-Web design
+Game design
 Applications
 Web development
 
 Select category
 All
-Web design
+Game design
 Applications
 Web development
 
@@ -157,7 +157,7 @@ Web development
 
 alt = fundo
 Fundo
-Web design
+Game design
 
 alt = brawlhalla
 Brawlhalla
@@ -165,11 +165,11 @@ Applications
 
 alt = dsm.
 DSM.
-Web design
+Game design
 
 alt = metaspark
 MetaSpark
-Web design
+Game design
 
 alt = summary
 Summary
