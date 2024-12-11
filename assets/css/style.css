@@ -68,6 +68,11 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --pastel-red: hsl(357, 92%, 62%);
+  --off-white-bg: hsl(72, 26%, 96%);
+  --pastel-teal: hsl(186, 39%, 62%);
+  --pastel-navy: hsl(197, 100%, 12%);
+
 
   /**
    * typography
@@ -334,6 +339,13 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+}
+
+.avatar-picture{
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  border: 2px var(--jet); /* Optional: Add a border around the image */
 }
 
 .info-content .name {
@@ -1829,7 +1841,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
-    padding-top: 60px;
+    padding-top: 35px;
     z-index: 1;
   }
 
