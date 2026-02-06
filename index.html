@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -48,11 +48,11 @@
         <div class="info-content">
           <h1 class="name" title="Marco Mollinetti">Marco Antonio <br> Florenzano Mollinetti</h1>
 
-          <p class="title"> AI Manager <br> Leading AI Development Teams <br> Research & Development in AI </p>
+          <p class="title" data-i18n="job-title"> AI Manager <br> Leading AI Development Teams <br> Research & Development in AI </p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span data-i18n="show-contacts">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -72,7 +72,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <p class="contact-title" data-i18n="email-label">Email</p>
 
               <a href="mailto:marco.mollinetti@gmail.com" class="contact-link">marco.mollinetti@gmail.com</a>
             </div>
@@ -86,7 +86,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title" data-i18n="phone-label">Phone</p>
 
               <a href="tel:+818056708475" class="contact-link">+81 (80) 5670-8475</a>
             </div>
@@ -100,7 +100,7 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <p class="contact-title" data-i18n="location-label">Location</p>
 
               <address>Tsukuba, Japan</address>
             </div>
@@ -133,6 +133,15 @@
 
         </ul>
 
+        <div class="separator"></div>
+
+        <div class="language-switcher">
+          <button class="lang-btn" data-lang-btn>
+            <ion-icon name="language-outline"></ion-icon>
+            <span data-i18n="lang-label">English</span>
+          </button>
+        </div>
+
       </div>
 
     </aside>
@@ -156,23 +165,23 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link data-page="about" data-i18n="nav-about">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link data-page="resume" data-i18n="nav-resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link data-page="portfolio" data-i18n="nav-portfolio">Portfolio</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Publications</button>
+            <button class="navbar-link" data-nav-link data-page="publications" data-i18n="nav-publications">Publications</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link data-page="contact" data-i18n="nav-contact">Contact</button>
           </li>
 
         </ul>
@@ -190,16 +199,16 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title" data-i18n="about-title">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p data-i18n="about-text-1">
             I am an AI Manager and researcher born in Belém Do Pará, Brazil, working and living for more than 10 years in Japan.
             Holding a Ph.D in Engineering from the University of Tsukuba, I currently lead AI development teams at Nohara Group, Inc., driving digital transformation in the construction industry through AI-powered solutions for Building Information Modeling (BIM) and operational workflows.
           </p>
 
-          <p>
+          <p data-i18n="about-text-2">
             I have a strong research background from my Master's and Ph.D. studies, with extensive knowledge in applied mathematics, operations research, statistics, and experimental design. I have authored several scientific articles. With over 8 years of professional experience in data science, machine learning engineering, and AI leadership, I have developed and analyzed machine learning applications across healthcare, logistics, weather forecasting, and construction. I lead company-wide AI education initiatives and implement automation solutions to eliminate repetitive tasks and boost efficiency. My expertise spans Generative AI, Agentic AI, Machine Learning, and team management, successfully delivering high-quality products on time.
           </p>
         </section>
@@ -211,7 +220,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">Expertises / Hobbies</h3>
+          <h3 class="h3 service-title" data-i18n="expertises-title">Expertises / Hobbies</h3>
 
           <ul class="service-list">
 
@@ -223,9 +232,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">AI & ML Engineering</h4>
+                <h4 class="h4 service-item-title" data-i18n="service-ai-title">AI & ML Engineering</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service-ai-text">
                   Leveraging and fine-tuning models for applications of many fields.
                 </p>
               </div>
@@ -239,9 +248,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend development</h4>
+                <h4 class="h4 service-item-title" data-i18n="service-backend-title">Backend development</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service-backend-text">
                   Development of API to interface AI services with websites.
                 </p>
               </div>
@@ -255,9 +264,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Data Science & Analysis</h4>
+                <h4 class="h4 service-item-title" data-i18n="service-data-title">Data Science & Analysis</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service-data-text">
                   Sound statistical analysis to extract meaningful results and insights.
                 </p>
               </div>
@@ -271,9 +280,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Generative AI</h4>
+                <h4 class="h4 service-item-title" data-i18n="service-genai-title">Generative AI</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service-genai-text">
                   State-of-the-art Generative AI fine-tuning for text and image generation.
                 </p>
               </div>
@@ -287,9 +296,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Game Development</h4>
+                <h4 class="h4 service-item-title" data-i18n="service-game-title">Game Development</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service-game-text">
                   Retro games from many genres that employ a degree of AI knowledge.
                 </p>
               </div>
@@ -303,9 +312,9 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Tarot Reading</h4>
+                <h4 class="h4 service-item-title" data-i18n="service-tarot-title">Tarot Reading</h4>
 
-                <p class="service-item-text">
+                <p class="service-item-text" data-i18n="service-tarot-text">
                   Fortune telling from the patterns described by each card.
                 </p>
               </div>
@@ -323,7 +332,7 @@
 
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Programming Languages</h3>
+          <h3 class="h3 testimonials-title" data-i18n="languages-title">Programming Languages</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
@@ -337,7 +346,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Python</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="lang-python-text">
                     Data analysis and statistics; ML model creation and tuning; Generative AI leveraging.
                   </p>
                 </div>
@@ -355,7 +364,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>R</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="lang-r-text">
                     Statistical analysis and experimental designs. Creation of interactive plots.
                   </p>
                 </div>
@@ -373,7 +382,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>C#</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="lang-csharp-text">
                     Game development using engines such as unreal and godot. Integration of AI to games.
                   </p>
                 </div>
@@ -391,7 +400,7 @@
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Javascript</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p data-i18n="lang-js-text">
                     Creation of API that integrate AI applications to be used in web services.
                   </p>
                 </div>
@@ -450,7 +459,7 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Partnerships</h3>
+          <h3 class="h3 clients-title" data-i18n="partnerships-title">Partnerships</h3>
 
           <ul class="clients-list has-scrollbar">
 
@@ -507,7 +516,7 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <h2 class="h2 article-title" data-i18n="resume-title">Resume</h2>
         </header>
 
         <section class="timeline">
@@ -517,18 +526,18 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3" data-i18n="education-title">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title"> Doctor of Philosophy (Ph.D) in Engineering <br> University of Tsukuba  </h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu-phd-title"> Doctor of Philosophy (Ph.D) in Engineering <br> University of Tsukuba  </h4>
 
               <span>2018 — 2021</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="edu-phd-text">
                Worked under the Laboratory of Systems Optimization. Conducted research in the field of nonlinear optimization, hyperparameter optimization and bayesian statistics.
               </p>
 
@@ -536,24 +545,23 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Masters Degree (M.Sc) in Information Engineering <br> University of Tsukuba</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu-msc-title">Masters Degree (M.Sc) in Information Engineering <br> University of Tsukuba</h4>
 
               <span>2016 — 2018</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="edu-msc-text">
                 Worked under the Laboratory of Systems Optimization. Conducted research in the field of nonlinear optimization, operations research and scheduling problems.
-              </p>
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Bachelors Degree (B.A) in Computer Science <br> University Centre of Pará (CESUPA)</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu-ba-title">Bachelors Degree (B.A) in Computer Science <br> University Centre of Pará (CESUPA)</h4>
 
               <span>2011 — 2015</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="edu-ba-text">
                 Graduated as the first of the class of 2014. Conducted research under the Laboratory of Natural Computation (LCN) in the field of evolutionary computation and swarm optimization.
               </p>
 
@@ -570,18 +578,18 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3" data-i18n="experience-title">Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">AI Manager <br> Nohara Group, Inc.</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-ai-manager-title">AI Manager <br> Nohara Group, Inc.</h4>
 
               <span>2025 — Present</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp-ai-manager-text">
                 Driving digital transformation in the construction industry by leveraging AI to revolutionize Building Information Modeling (BIM) and operational workflows. Leading company-wide AI education initiatives and implementing automation solutions to eliminate repetitive tasks, boost efficiency, and unlock innovation across all project stages.
               </p>
 
@@ -589,11 +597,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Project Team Lead <br> MTI ltd.</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-mti-title">Project Team Lead <br> MTI ltd.</h4>
 
               <span>2022 — 2025</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp-mti-text">
                 Lead a initiative to train junior Data scientists to full positions by administering courses and
                 practical exercises for small teams of up to 10 people.
                 Lead a small team to conduct research on Large Language Models to build knowledge graph
@@ -614,11 +622,11 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Postdoctorate Research Fellow <br> Management and Operations Center of the System of Protection of the Amazon (CENSIPAM) </h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-censipam-title">Postdoctorate Research Fellow <br> Management and Operations Center of the System of Protection of the Amazon (CENSIPAM) </h4>
 
               <span>2022 — 2024</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp-censipam-text">
                 Worked on the project of the Autonomous Oil spill detection system of the amazonian sovereign
 marine area. Co-development together with researchers a image detection system based on Deep Learning to
 detect oil spills and foreign vessels in the sea from satellite images Successfully improved the system accuracy by more than 10% by integrating ensemble learning
@@ -629,11 +637,11 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Senior Data Analyst <br> PLIMES Inc.</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-plimes-senior-title">Senior Data Analyst <br> PLIMES Inc.</h4>
 
               <span>2021 — 2021</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp-plimes-senior-text">
                 Using knowledge obtained from working experience and academic years, developed solutions for GOKURI, a neckband wearable device that uses machine learning techniques such as deep learning to detect signs of dysphagia during mealtime activity. Technologies such as Python, R and its packages for machine learning such as TensorFlow, TFLite and AutoML were extensively used. Engaged in integrating cough detection to the system.
               </p>
 
@@ -641,11 +649,11 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Data Analyst <br> PLIMES Inc.</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-plimes-title">Data Analyst <br> PLIMES Inc.</h4>
 
               <span>2019 — 2021</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp-plimes-text">
                 Worked as a data analyst and machine learning engineer, developing solutions based on deep learning for GOKURI, a wearable neckband that detects swallowing activity to monitor risk of dysphagia. Technologies employed: Python, R, Matlab, TensorFlow and TensorFlowLite. Developed a Bayesian learning method to improve the hyperparameters of the underlying neural network. Improved the detection and recognition rate of swallows by tuning and optimizing the neural network architecture.
               </p>
 
@@ -653,11 +661,11 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Research Fellow <br> Laboratory of Computational Technologies, Ufra - Universidade Federal Rural Da Amazonia</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-ufra-title">Research Fellow <br> Laboratory of Computational Technologies, Ufra - Universidade Federal Rural Da Amazonia</h4>
 
               <span>2015 — Present</span>
 
-              <p class="timeline-text">
+              <p class="timeline-text" data-i18n="exp-ufra-text">
                 Conducting and mentoring graduate students in research in the following fields: Swarm Intelligence; Dynamic Systems; Game Theory; Supervised and Reinforcement Learning. Research focused on the protection and preservation of the region of the Amazon Rainforest. Six co-authored papers and two co-authored Scientific Journals.
               </p>
 
@@ -669,14 +677,14 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title" data-i18n="skills-title">My skills</h3>
 
           <ul class="skills-list content-card">
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Machine Learning and Statistics</h5>
+                <h5 class="h5" data-i18n="skill-ml">Machine Learning and Statistics</h5>
                 <data value="90">90%</data>
               </div>
 
@@ -689,7 +697,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Programming</h5>
+                <h5 class="h5" data-i18n="skill-programming">Programming</h5>
                 <data value="75">75%</data>
               </div>
 
@@ -702,7 +710,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Generative AI</h5>
+                <h5 class="h5" data-i18n="skill-genai">Generative AI</h5>
                 <data value="85">85%</data>
               </div>
 
@@ -715,7 +723,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Leadership and Team Management</h5>
+                <h5 class="h5" data-i18n="skill-leadership">Leadership and Team Management</h5>
                 <data value="60">60%</data>
               </div>
 
@@ -742,7 +750,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title" data-i18n="portfolio-title">Portfolio</h2>
         </header>
 
         <section class="projects">
@@ -750,19 +758,19 @@ methods to the current learning algorithm. Presented the improvements of the sys
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <button class="active" data-filter-btn data-filter="all" data-i18n="filter-all">All</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Game design</button>
+              <button data-filter-btn data-filter="game design" data-i18n="filter-game">Game design</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn data-filter="applications" data-i18n="filter-apps">Applications</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Research</button>
+              <button data-filter-btn data-filter="research" data-i18n="filter-research">Research</button>
             </li>
 
           </ul>
@@ -771,7 +779,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-selecct-value data-i18n="select-category">Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -782,19 +790,19 @@ methods to the current learning algorithm. Presented the improvements of the sys
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item data-filter="all" data-i18n="filter-all">All</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Games design</button>
+                <button data-select-item data-filter="game design" data-i18n="filter-game">Games design</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item data-filter="applications" data-i18n="filter-apps">Applications</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Research</button>
+                <button data-select-item data-filter="research" data-i18n="filter-research">Research</button>
               </li>
 
             </ul>
@@ -982,7 +990,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
       <article class="blog" data-page="publications">
 
         <header>
-          <h2 class="h2 article-title">Publications</h2>
+          <h2 class="h2 article-title" data-i18n="publications-title">Publications</h2>
         </header>
 
         <section class="blog-posts">
@@ -1269,11 +1277,11 @@ methods to the current learning algorithm. Presented the improvements of the sys
       <article class="contact" data-page="contact">
 
         <header>
-          <h2 class="h2 article-title">Contact</h2>
+          <h2 class="h2 article-title" data-i18n="contact-title">Contact</h2>
         </header>
 
         <section class="contact-text">
-          <p>
+          <p data-i18n="contact-text">
             Feel free to reach out if you'd like to collaborate, discuss research opportunities, or just connect. 
             I'm always open to interesting conversations about AI, data science, or technology in general.
           </p>
@@ -1281,21 +1289,21 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
         <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title" data-i18n="form-title">Contact Form</h3>
 
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" data-i18n-placeholder="form-name" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" data-i18n-placeholder="form-email" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" data-i18n-placeholder="form-message" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span data-i18n="form-send">Send Message</span>
             </button>
 
           </form>
