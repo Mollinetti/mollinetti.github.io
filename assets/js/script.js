@@ -350,17 +350,38 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     const targetPage = this.dataset.page;
-
-    for (let i = 0; i < pages.length; i++) {
-      if (targetPage === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    
+    if (!targetPage) {
+      console.warn("Navigation link missing data-page attribute");
+      return;
     }
 
+    // Remove active class from all pages and navigation links
+    for (let j = 0; j < pages.length; j++) {
+      pages[j].classList.remove("active");
+    }
+    for (let j = 0; j < navigationLinks.length; j++) {
+      navigationLinks[j].classList.remove("active");
+    }
+
+    // Add active class to matching page
+    let pageFound = false;
+    for (let j = 0; j < pages.length; j++) {
+      if (targetPage === pages[j].dataset.page) {
+        pages[j].classList.add("active");
+        pageFound = true;
+        break;
+      }
+    }
+    
+    if (!pageFound) {
+      console.warn("No page found with data-page='" + targetPage + "'");
+    }
+
+    // Add active class to clicked navigation link
+    this.classList.add("active");
+    
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
