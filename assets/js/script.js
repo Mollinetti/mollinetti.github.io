@@ -331,13 +331,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // 6. Initialize navigation
   const navigationLinks = document.querySelectorAll("[data-nav-link]");
-  const pages = document.querySelectorAll("[data-page]");
+  const pages = document.querySelectorAll("article[data-page]");
+
+  console.log("Navigation initialization:", {
+    navigationLinksCount: navigationLinks.length,
+    pagesCount: pages.length,
+    navigationLinks: Array.from(navigationLinks).map(link => ({
+      text: link.textContent.trim(),
+      dataPage: link.dataset.page,
+      dataI18n: link.dataset.i18n
+    })),
+    pages: Array.from(pages).map(page => ({
+      className: page.className,
+      dataPage: page.dataset.page
+    }))
+  });
 
   if (navigationLinks.length > 0 && pages.length > 0) {
     // add event to all nav link
     for (let i = 0; i < navigationLinks.length; i++) {
-      navigationLinks[i].addEventListener("click", function () {
+      navigationLinks[i].addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Re-query to ensure we have fresh references
+        const allPages = document.querySelectorAll("article[data-page]");
+        const allNavLinks = document.querySelectorAll("[data-nav-link]");
         const targetPage = this.dataset.page;
+        
+        console.log("Navigation clicked:", {
+          targetPage: targetPage,
+          clickedElement: this,
+          allPagesCount: allPages.length,
+          allNavLinksCount: allNavLinks.length
+        });
         
         if (!targetPage) {
           console.warn("Navigation link missing data-page attribute");
@@ -345,25 +372,35 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Remove active class from all pages and navigation links
-        for (let j = 0; j < pages.length; j++) {
-          pages[j].classList.remove("active");
+        for (let j = 0; j < allPages.length; j++) {
+          allPages[j].classList.remove("active");
         }
-        for (let j = 0; j < navigationLinks.length; j++) {
-          navigationLinks[j].classList.remove("active");
+        for (let j = 0; j < allNavLinks.length; j++) {
+          allNavLinks[j].classList.remove("active");
         }
 
         // Add active class to matching page
         let pageFound = false;
-        for (let j = 0; j < pages.length; j++) {
-          if (targetPage === pages[j].dataset.page) {
-            pages[j].classList.add("active");
+        for (let j = 0; j < allPages.length; j++) {
+          if (targetPage === allPages[j].dataset.page) {
+            allPages[j].classList.add("active");
             pageFound = true;
+            console.log("Page found and activated:", {
+              element: allPages[j],
+              dataPage: allPages[j].dataset.page,
+              className: allPages[j].className,
+              computedDisplay: window.getComputedStyle(allPages[j]).display
+            });
             break;
           }
         }
         
         if (!pageFound) {
           console.warn("No page found with data-page='" + targetPage + "'");
+          console.log("Available pages:", Array.from(allPages).map(p => ({
+            dataPage: p.dataset.page,
+            className: p.className
+          })));
         }
 
         // Add active class to clicked navigation link
@@ -373,6 +410,11 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
+  } else {
+    console.error("Navigation initialization failed:", {
+      navigationLinks: navigationLinks.length,
+      pages: pages.length
+    });
   }
 
   // 7. Initialize language switcher button
