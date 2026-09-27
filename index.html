@@ -5,7 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marco Mollinetti - Personal Page</title>
+  <title>Marco Mollinetti — AI Division Manager &amp; Researcher</title>
+  <meta name="description" content="Marco Antonio Florenzano Mollinetti - AI Division Manager at Nohara Group, Ph.D. in Systems Engineering (University of Tsukuba). Applied AI, optimization, and agentic systems.">
+  <meta name="author" content="Marco Antonio Florenzano Mollinetti">
+
+  <!-- link previews (LinkedIn, Slack, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Marco Mollinetti — AI Division Manager &amp; Researcher">
+  <meta property="og:description" content="AI Division Manager at Nohara Group. Ph.D. in Systems Engineering, University of Tsukuba. Applied AI, optimization, and agentic systems.">
+  <meta property="og:image" content="https://mollinetti.github.io/assets/images/profile-marco.jpg">
+  <meta property="og:url" content="https://mollinetti.github.io/">
+  <meta name="twitter:card" content="summary">
 
   <!--
     - favicon
@@ -15,6 +25,12 @@
   <!--
     - custom css link
   -->
+  <script>
+    try {
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') document.documentElement.dataset.theme = savedTheme;
+    } catch (e) {}
+  </script>
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!--
@@ -22,7 +38,7 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,7 +64,7 @@
         <div class="info-content">
           <h1 class="name" title="Marco Mollinetti">Marco Antonio <br> Florenzano Mollinetti</h1>
 
-          <p class="title" data-i18n="job-title"> AI Manager <br> Leading AI Development Teams <br> Research & Development in AI </p>
+          <p class="title" data-i18n="job-title">AI Division Manager, Nohara Group <br> Ph.D. &mdash; Applied AI &amp; Optimization</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -82,13 +98,13 @@
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
             <div class="contact-info">
-              <p class="contact-title" data-i18n="phone-label">Phone</p>
+              <p class="contact-title" data-i18n="availability-label">Availability</p>
 
-              <a href="tel:+818056708475" class="contact-link">+81 (80) 5670-8475</a>
+              <span class="contact-value" data-i18n="availability-value">Open to consulting &amp; selected projects</span>
             </div>
 
           </li>
@@ -114,19 +130,31 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/marco-antonio-florenzano-mollinetti-52733b126" class="social-link">
+            <a href="https://www.linkedin.com/in/marco-antonio-florenzano-mollinetti-52733b126" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/Mollinetti" class="social-link">
+            <a href="https://github.com/Mollinetti" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.instagram.com/mollinetti/" class="social-link">
+            <a href="https://x.com/memyselfnMarc" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://orcid.org/0000-0002-5948-691X" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+              <ion-icon name="finger-print-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/mollinetti/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -139,6 +167,11 @@
           <button class="lang-btn" data-lang-btn>
             <ion-icon name="language-outline"></ion-icon>
             <span data-i18n="lang-label">English</span>
+          </button>
+
+          <button class="lang-btn" type="button" data-theme-btn aria-label="Switch to dark mode">
+            <ion-icon name="moon-outline"></ion-icon>
+            <span data-theme-label>Dark</span>
           </button>
         </div>
 
@@ -204,12 +237,16 @@
 
         <section class="about-text">
           <p data-i18n="about-text-1">
-            I am an AI Manager and researcher born in Belém Do Pará, Brazil, working and living for more than 10 years in Japan.
-            Holding a Ph.D in Engineering from the University of Tsukuba, I currently lead AI development teams at Nohara Group, Inc., driving digital transformation in the construction industry through AI-powered solutions for Building Information Modeling (BIM) and operational workflows.
+            I am an AI leader and researcher, born in Bel&eacute;m do Par&aacute;, Brazil, and living in Japan since 2016.
+            I hold a Ph.D. in Systems Engineering from the University of Tsukuba, and I now lead the AI division at Nohara Group &mdash; a construction group with over 300 years of history &mdash; running 9+ concurrent projects across Japan, Singapore, and Indonesia.
           </p>
 
           <p data-i18n="about-text-2">
-            I have a strong research background from my Master's and Ph.D. studies, with extensive knowledge in applied mathematics, operations research, statistics, and experimental design. I have authored several scientific articles. With over 8 years of professional experience in data science, machine learning engineering, and AI leadership, I have developed and analyzed machine learning applications across healthcare, logistics, weather forecasting, and construction. I lead company-wide AI education initiatives and implement automation solutions to eliminate repetitive tasks and boost efficiency. My expertise spans Generative AI, Agentic AI, Machine Learning, and team management, successfully delivering high-quality products on time.
+            My work sits across three pillars that keep feeding each other: research, engineering, and management. I started as a researcher, publishing on evolutionary computation and nonlinear optimization and securing a $200,000 CNPq grant. I became an engineer who ships production systems &mdash; deep-learning models at 95% accuracy, autonomous detection pipelines, weather forecasting inside aviation maps. Today I combine machine learning, optimization, and agentic AI with Lean practice to deliver measurable results: &yen;40M in avoided outsourcing, up to &yen;900M in projected annual revenue uplift, and a 66% cut in manual specification entry.
+          </p>
+
+          <p data-i18n="about-text-3">
+            I also write Nohara&rsquo;s AI governance frameworks, run reskilling and AI literacy programmes, and coach data-science teams across three countries. Available for consulting in applied AI, optimization, agentic systems, and AI strategy &mdash; remote or on-site.
           </p>
         </section>
 
@@ -220,15 +257,14 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title" data-i18n="expertises-title">Expertises / Hobbies</h3>
+          <h3 class="h3 service-title" data-i18n="expertises-title">What I do</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-ml.svg
-                " alt="design icon" width="40">
+                <span class="service-icon service-icon--ml" aria-hidden="true"></span>
               </div>
 
               <div class="service-content-box">
@@ -244,11 +280,11 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-webdev.svg" alt="research icon" width="40">
+                <span class="service-icon service-icon--webdev" aria-hidden="true"></span>
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title" data-i18n="service-backend-title">Backend development</h4>
+                <h4 class="h4 service-item-title" data-i18n="service-backend-title">Backend Development</h4>
 
                 <p class="service-item-text" data-i18n="service-backend-text">
                   Development of API to interface AI services with websites.
@@ -260,7 +296,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-barchart.svg" alt="mobile app icon" width="40">
+                <span class="service-icon service-icon--barchart" aria-hidden="true"></span>
               </div>
 
               <div class="service-content-box">
@@ -276,7 +312,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-genai.svg" alt="camera icon" width="40">
+                <span class="service-icon service-icon--genai" aria-hidden="true"></span>
               </div>
 
               <div class="service-content-box">
@@ -289,10 +325,25 @@
 
             </li>
 
+          </ul>
+
+        </section>
+
+
+        <!--
+          - outside work
+        -->
+
+        <section class="service service--hobbies">
+
+          <h3 class="h3 service-title" data-i18n="hobbies-title">Outside work</h3>
+
+          <ul class="service-list">
+
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-game.svg" alt="camera icon" width="40">
+                <span class="service-icon service-icon--game" aria-hidden="true"></span>
               </div>
 
               <div class="service-content-box">
@@ -308,7 +359,7 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-tarot.svg" alt="camera icon" width="40">
+                <span class="service-icon service-icon--tarot" aria-hidden="true"></span>
               </div>
 
               <div class="service-content-box">
@@ -334,18 +385,18 @@
 
           <h3 class="h3 testimonials-title" data-i18n="languages-title">Programming Languages</h3>
 
-          <ul class="testimonials-list has-scrollbar">
+          <ul class="testimonials-list">
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card">
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icon-python.svg" alt="Python" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/icon-python.svg" alt="Python" width="60">
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python</h4>
+                <h4 class="h4 testimonials-item-title">Python</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p data-i18n="lang-python-text">
                     Data analysis and statistics; ML model creation and tuning; Generative AI leveraging.
                   </p>
@@ -355,15 +406,15 @@
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card">
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icon-lang.svg" alt="R" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/icon-lang.svg" alt="R" width="60">
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>R</h4>
+                <h4 class="h4 testimonials-item-title">R</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p data-i18n="lang-r-text">
                     Statistical analysis and experimental designs. Creation of interactive plots.
                   </p>
@@ -373,15 +424,15 @@
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card">
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icon-cs.svg" alt="C#" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/icon-cs.svg" alt="C#" width="60">
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>C#</h4>
+                <h4 class="h4 testimonials-item-title">C#</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p data-i18n="lang-csharp-text">
                     Game development using engines such as unreal and godot. Integration of AI to games.
                   </p>
@@ -391,15 +442,15 @@
             </li>
 
             <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+              <div class="content-card">
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/icon-javascript.png" alt="Javascript" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/icon-javascript.png" alt="Javascript" width="60">
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Javascript</h4>
+                <h4 class="h4 testimonials-item-title">Javascript</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="testimonials-text">
                   <p data-i18n="lang-js-text">
                     Creation of API that integrate AI applications to be used in web services.
                   </p>
@@ -412,96 +463,6 @@
 
         </section>
 
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/icon-python.svg" alt="Python" width="80" data-modal-img>
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Python</h4>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title" data-i18n="partnerships-title">Partnerships</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-labtec.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-mti.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-govpa.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-aws.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-gcloud.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-ufpa.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -519,50 +480,107 @@
           <h2 class="h2 article-title" data-i18n="resume-title">Resume</h2>
         </header>
 
+        <div class="resume-actions">
+          <a class="cv-btn" href="./assets/cv/Marco-Mollinetti-CV.pdf" target="_blank" rel="noopener noreferrer">
+            <ion-icon name="download-outline"></ion-icon>
+            <span data-i18n="download-cv">Download full CV</span>
+          </a>
+        </div>
+
         <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
-            <h3 class="h3" data-i18n="education-title">Education</h3>
+            <h3 class="h3" data-i18n="experience-title">Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="edu-phd-title"> Doctor of Philosophy (Ph.D) in Engineering <br> University of Tsukuba  </h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-nohara-title">AI Division Manager <br> Nohara Group &mdash; Tokyo, Japan</h4>
 
-              <span>2018 — 2021</span>
+              <span>Aug 2025 &mdash; <span data-i18n="present">Present</span></span>
 
-              <p class="timeline-text" data-i18n="edu-phd-text">
-               Worked under the Laboratory of Systems Optimization. Conducted research in the field of nonlinear optimization, hyperparameter optimization and bayesian statistics.
+              <p class="timeline-text" data-i18n="exp-nohara-text">
+                Leads the AI division inside Technology Headquarters: a team of 3&ndash;5 (three of them PhDs), 9+ concurrent projects, and coordination across six business units in Japan, Singapore, and Indonesia.
+              </p>
+
+              <ul class="timeline-points">
+                <li data-i18n="exp-nohara-p1"><strong>Gypsum board allocation &amp; nesting optimization</strong> &mdash; neuro-symbolic engine (OR-Tools CP-SAT + Swin Transformer V2 + Qwen-2.5-32B) on a secure air-gapped cluster. PoC reached 80% yield parity, avoiding &yen;40M in outsourced CAD development.</li>
+                <li data-i18n="exp-nohara-p2"><strong>AI-powered material quantity takeoff</strong> &mdash; automated interior material calculation from contractor specifications. Lead time cut from five days to under two; up to &yen;900M projected annual revenue uplift and &yen;25M saved against outsourcing.</li>
+                <li data-i18n="exp-nohara-p3"><strong>Hybrid OCR + LLM delivery-sheet pipeline</strong> &mdash; extracts six mandatory fields from low-quality handwritten faxes; Streamlit dashboard on AWS, with 200K-row historical analysis for loss reduction.</li>
+                <li data-i18n="exp-nohara-p4"><strong>Agentic AI for legacy estimation logic</strong> &mdash; Copilot Studio agents analysing VBA macros and BIM plugin workflows inside a secure local-AI environment.</li>
+                <li data-i18n="exp-nohara-p5"><strong>Governance and enablement</strong> &mdash; authored company-wide AI policies, Tooling &amp; Engineering Guidelines, and the AI Skill Map; runs a four-week reskilling bootcamp and the Nohara AI Academy prototype.</li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="exp-mti-lead-title">AI Team Leader <br> MTI Ltd. &mdash; Tokyo, Japan</h4>
+
+              <span>May 2024 &mdash; Aug 2025</span>
+
+              <ul class="timeline-points">
+                <li data-i18n="exp-mti-lead-p1">Diffusion-network manga storyboarding: 45% productivity gain and 10% sales lift.</li>
+                <li data-i18n="exp-mti-lead-p2">GPT distillation for embedded devices; graph-based agentic AI for industrial machinery.</li>
+                <li data-i18n="exp-mti-lead-p3">Productised a 10-person data-scientist training programme.</li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="exp-mti-senior-title">Senior Data Scientist <br> MTI Ltd. &mdash; Tokyo, Japan</h4>
+
+              <span>Jan 2022 &mdash; May 2024</span>
+
+              <ul class="timeline-points">
+                <li data-i18n="exp-mti-senior-p1">Japan&ndash;Vietnam&ndash;Singapore container-scheduling agent: 30% reduction in wait time.</li>
+                <li data-i18n="exp-mti-senior-p2">Rain-forecast system integrated into aviation maps, at 95% accuracy.</li>
+                <li data-i18n="exp-mti-senior-p3">Three years leading coaching and training for the Vietnam team.</li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" data-i18n="exp-censipam-title">Postdoctoral Researcher <br> CENSIPAM &mdash; Brazil</h4>
+
+              <span>Mar 2022 &mdash; Feb 2023</span>
+              <span class="concurrent" data-i18n="concurrent">concurrent</span>
+
+              <p class="timeline-text" data-i18n="exp-censipam-text">
+                Autonomous oil-spill and foreign-vessel detection over Brazil&rsquo;s sovereign marine area, from satellite imagery (UNet + ensemble classifiers). Improved system accuracy by more than 10% and presented the results to the Brazilian Ministry of Defense.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="edu-msc-title">Masters Degree (M.Sc) in Information Engineering <br> University of Tsukuba</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-plimes-title">AI Engineer <br> Plimes Inc. &mdash; Tsukuba, Japan</h4>
 
-              <span>2016 — 2018</span>
+              <span>Oct 2019 &mdash; Dec 2021</span>
 
-              <p class="timeline-text" data-i18n="edu-msc-text">
-                Worked under the Laboratory of Systems Optimization. Conducted research in the field of nonlinear optimization, operations research and scheduling problems.
+              <p class="timeline-text" data-i18n="exp-plimes-text">
+                Built cough and swallow recognition for GOKURI, a neckband wearable that monitors dysphagia risk, reaching 95% accuracy through novel framing and wavelet denoising. Developed a Bayesian method for tuning the underlying network&rsquo;s hyperparameters.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="edu-ba-title">Bachelors Degree (B.A) in Computer Science <br> University Centre of Pará (CESUPA)</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="exp-labtec-title">Research Fellow <br> Lab-TeC, Universidade Federal Rural da Amaz&ocirc;nia &mdash; Brazil</h4>
 
-              <span>2011 — 2015</span>
+              <span>Jun 2016 &mdash; <span data-i18n="present">Present</span></span>
+              <span class="concurrent" data-i18n="concurrent">concurrent</span>
 
-              <p class="timeline-text" data-i18n="edu-ba-text">
-                Graduated as the first of the class of 2014. Conducted research under the Laboratory of Natural Computation (LCN) in the field of evolutionary computation and swarm optimization.
+              <p class="timeline-text" data-i18n="exp-labtec-text">
+                Supervises researchers from undergraduate through doctoral level in swarm intelligence, dynamic systems, game theory, and reinforcement learning. Secured a $200,000 CNPq grant for Amazon lightning-detection research, leading a 12-person team with UFPA and the University of Arizona.
               </p>
 
             </li>
@@ -575,98 +593,46 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
 
-            <h3 class="h3" data-i18n="experience-title">Experience</h3>
+            <h3 class="h3" data-i18n="education-title">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="exp-ai-manager-title">AI Manager <br> Nohara Group, Inc.</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu-phd-title">Ph.D. in Systems Engineering <br> University of Tsukuba</h4>
 
-              <span>2025 — Present</span>
+              <span>2018 &mdash; 2021</span>
 
-              <p class="timeline-text" data-i18n="exp-ai-manager-text">
-                Driving digital transformation in the construction industry by leveraging AI to revolutionize Building Information Modeling (BIM) and operational workflows. Leading company-wide AI education initiatives and implementing automation solutions to eliminate repetitive tasks, boost efficiency, and unlock innovation across all project stages.
+              <p class="timeline-text" data-i18n="edu-phd-text">
+                Laboratory of Systems Optimization. Thesis: <em>Deterministic Methods for Non-Deterministic Optimization Algorithms</em>. Research in nonlinear optimization, hyperparameter optimization, and Bayesian statistics.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="exp-mti-title">Project Team Lead <br> MTI ltd.</h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu-msc-title">M.Sc. in Computer Science <br> University of Tsukuba</h4>
 
-              <span>2022 — 2025</span>
+              <span>2016 &mdash; 2018</span>
 
-              <p class="timeline-text" data-i18n="exp-mti-text">
-                Lead a initiative to train junior Data scientists to full positions by administering courses and
-                practical exercises for small teams of up to 10 people.
-                Lead a small team to conduct research on Large Language Models to build knowledge graph
-                databases to provide a knowledge base for a chatbot to provide business information to many
-                departments of a large scale shipping company.
-                Lead a small team to migrate an application of booking forecast forecast of shipping containers
-                to a working pipeline.
-                Co-developed image processing techniques for the task of rust, concrete cracks and bolt-nuts
-                detection in telecommunication towers from drone pictures. Focused on client-client relations to
-                educate the client on the scalability and usability of the project.
-                Co-Developed techniques based on machine learning for the creation of weather synthetic data
-                generated from two simultaneous radars of different frequencies.
-                Developed algorithms based on Neural Networks for short term weather forecast in the region of
-                Japan.
+              <p class="timeline-text" data-i18n="edu-msc-text">
+                Laboratory of Systems Optimization. Thesis: <em>A Bee-Restarting Algorithm for the Nelder&ndash;Mead Descent Method</em>. Research in nonlinear optimization, operations research, and scheduling problems.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" data-i18n="exp-censipam-title">Postdoctorate Research Fellow <br> Management and Operations Center of the System of Protection of the Amazon (CENSIPAM) </h4>
+              <h4 class="h4 timeline-item-title" data-i18n="edu-ba-title">B.A. in Computer Science <br> University Centre of Par&aacute; (CESUPA)</h4>
 
-              <span>2022 — 2024</span>
+              <span>2011 &mdash; 2014</span>
 
-              <p class="timeline-text" data-i18n="exp-censipam-text">
-                Worked on the project of the Autonomous Oil spill detection system of the amazonian sovereign
-marine area. Co-development together with researchers a image detection system based on Deep Learning to
-detect oil spills and foreign vessels in the sea from satellite images Successfully improved the system accuracy by more than 10% by integrating ensemble learning
-methods to the current learning algorithm. Presented the improvements of the system to the Ministry of Defense of Brazil.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" data-i18n="exp-plimes-senior-title">Senior Data Analyst <br> PLIMES Inc.</h4>
-
-              <span>2021 — 2021</span>
-
-              <p class="timeline-text" data-i18n="exp-plimes-senior-text">
-                Using knowledge obtained from working experience and academic years, developed solutions for GOKURI, a neckband wearable device that uses machine learning techniques such as deep learning to detect signs of dysphagia during mealtime activity. Technologies such as Python, R and its packages for machine learning such as TensorFlow, TFLite and AutoML were extensively used. Engaged in integrating cough detection to the system.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" data-i18n="exp-plimes-title">Data Analyst <br> PLIMES Inc.</h4>
-
-              <span>2019 — 2021</span>
-
-              <p class="timeline-text" data-i18n="exp-plimes-text">
-                Worked as a data analyst and machine learning engineer, developing solutions based on deep learning for GOKURI, a wearable neckband that detects swallowing activity to monitor risk of dysphagia. Technologies employed: Python, R, Matlab, TensorFlow and TensorFlowLite. Developed a Bayesian learning method to improve the hyperparameters of the underlying neural network. Improved the detection and recognition rate of swallows by tuning and optimizing the neural network architecture.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title" data-i18n="exp-ufra-title">Research Fellow <br> Laboratory of Computational Technologies, Ufra - Universidade Federal Rural Da Amazonia</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text" data-i18n="exp-ufra-text">
-                Conducting and mentoring graduate students in research in the following fields: Swarm Intelligence; Dynamic Systems; Game Theory; Supervised and Reinforcement Learning. Research focused on the protection and preservation of the region of the Amazon Rainforest. Six co-authored papers and two co-authored Scientific Journals.
+              <p class="timeline-text" data-i18n="edu-ba-text">
+                Graduated first in class. Thesis: <em>Earthquake prediction model using Evolutionary Computation</em>. Research at the Laboratory of Natural Computation (LCN) in evolutionary computation and swarm optimization.
               </p>
 
             </li>
@@ -677,62 +643,136 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
         <section class="skill">
 
-          <h3 class="h3 skills-title" data-i18n="skills-title">My skills</h3>
+          <h3 class="h3 skills-title" data-i18n="skills-title">Technical stack</h3>
 
-          <ul class="skills-list content-card">
+          <div class="stack-grid">
 
-            <li class="skills-item">
+            <div class="stack-group">
+              <h4 class="stack-label" data-i18n="stack-languages">Languages</h4>
+              <ul class="tag-list">
+                <li class="tag">Python</li>
+                <li class="tag">R</li>
+                <li class="tag">Java</li>
+                <li class="tag">C++</li>
+                <li class="tag">MATLAB</li>
+                <li class="tag">Lua</li>
+                <li class="tag">PHP</li>
+                <li class="tag">LaTeX</li>
+              </ul>
+            </div>
 
-              <div class="title-wrapper">
-                <h5 class="h5" data-i18n="skill-ml">Machine Learning and Statistics</h5>
-                <data value="90">90%</data>
-              </div>
+            <div class="stack-group">
+              <h4 class="stack-label" data-i18n="stack-genai">Generative &amp; Agentic AI</h4>
+              <ul class="tag-list">
+                <li class="tag">GPT-4</li>
+                <li class="tag">Claude</li>
+                <li class="tag">Llama</li>
+                <li class="tag">Mistral</li>
+                <li class="tag">Qwen (local)</li>
+                <li class="tag">Stable Diffusion</li>
+                <li class="tag">Flux</li>
+                <li class="tag">Copilot Studio</li>
+              </ul>
+            </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
+            <div class="stack-group">
+              <h4 class="stack-label" data-i18n="stack-ml">Machine Learning</h4>
+              <ul class="tag-list">
+                <li class="tag">Transformers</li>
+                <li class="tag">UNets</li>
+                <li class="tag">VAEs</li>
+                <li class="tag">Deep Q-learning</li>
+                <li class="tag">Hierarchical clustering</li>
+                <li class="tag">PCA</li>
+                <li class="tag">Experimental design</li>
+              </ul>
+            </div>
 
+            <div class="stack-group">
+              <h4 class="stack-label" data-i18n="stack-opt">Optimization &amp; OR</h4>
+              <ul class="tag-list">
+                <li class="tag">OR-Tools CP-SAT</li>
+                <li class="tag">Constraint programming</li>
+                <li class="tag">Nonlinear optimization</li>
+                <li class="tag">Combinatorial optimization</li>
+                <li class="tag">Operations research</li>
+              </ul>
+            </div>
+
+            <div class="stack-group">
+              <h4 class="stack-label" data-i18n="stack-cloud">Cloud &amp; Platforms</h4>
+              <ul class="tag-list">
+                <li class="tag">AWS</li>
+                <li class="tag">Google Cloud</li>
+                <li class="tag">Azure</li>
+                <li class="tag">Microsoft 365</li>
+                <li class="tag">Streamlit</li>
+                <li class="tag">Git</li>
+              </ul>
+            </div>
+
+            <div class="stack-group">
+              <h4 class="stack-label" data-i18n="stack-domain">Domain &amp; Ways of Working</h4>
+              <ul class="tag-list">
+                <li class="tag">ConTech / BIM</li>
+                <li class="tag">JASS 26</li>
+                <li class="tag">CEDXM</li>
+                <li class="tag">A3 thinking</li>
+                <li class="tag">PDCA / Kaizen</li>
+                <li class="tag">Design Sprints</li>
+                <li class="tag">Portfolio management</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title" data-i18n="awards-title">Awards &amp; Certifications</h3>
+
+          <ul class="awards-list">
+
+            <li class="award-item">
+              <span class="award-year">2023</span>
+              <p data-i18n="award-aws"><strong>AWS Solutions Architect &ndash; Associate</strong>, Amazon Web Services</p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5" data-i18n="skill-programming">Programming</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
+            <li class="award-item">
+              <span class="award-year">2022</span>
+              <p data-i18n="award-cnpq"><strong>Project Grant for Research</strong> ($200,000), National Council of Scientific and Technological Development (CNPq), Brazil</p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5" data-i18n="skill-genai">Generative AI</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
+            <li class="award-item">
+              <span class="award-year">2018</span>
+              <p data-i18n="award-bracis"><strong>Best Research Paper</strong>, Brazilian Conference on Intelligent Systems (BRACIS)</p>
             </li>
 
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5" data-i18n="skill-leadership">Leadership and Team Management</h5>
-                <data value="60">60%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 60%;"></div>
-              </div>
-
+            <li class="award-item">
+              <span class="award-year">2017</span>
+              <p data-i18n="award-toeic"><strong>TOEIC Written Test</strong> &mdash; 990/990</p>
             </li>
 
+            <li class="award-item">
+              <span class="award-year">2014</span>
+              <p data-i18n="award-first"><strong>First in Class</strong>, University Centre of Par&aacute;</p>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title" data-i18n="languages-spoken-title">Languages</h3>
+
+          <ul class="tag-list tag-list--wide">
+            <li class="tag tag--strong" data-i18n="lang-en">English &mdash; Native</li>
+            <li class="tag tag--strong" data-i18n="lang-pt">Portuguese &mdash; Native</li>
+            <li class="tag" data-i18n="lang-ja">Japanese &mdash; Fluent (N1 equivalent)</li>
+            <li class="tag" data-i18n="lang-es">Spanish &mdash; Fluent</li>
+            <li class="tag" data-i18n="lang-it">Italian &mdash; Intermediate</li>
           </ul>
 
         </section>
@@ -809,10 +849,35 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
           </div>
 
+          <!--
+            - TO MAKE A CARD CLICKABLE: add href="..." to its <a> (repo, paper, or demo).
+            - Without an href the card renders normally but navigates nowhere - no dead links.
+          -->
+
           <ul class="project-list">
 
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-belem.jpg" alt="BelemConverse" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">BelemConverse</h3>
+
+                <p class="project-desc" data-i18n="proj-belem">A fine-tuned small-scale LLM acting as an AI tour guide for Bel&eacute;m do Par&aacute;, host city of COP30. Builds custom routes and recommendations in 10+ languages. In production.</p>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -824,13 +889,15 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
                 <h3 class="project-title">Torrential Rain Forecast</h3>
 
+                <p class="project-desc" data-i18n="proj-rain">Short-term rain forecasting for Japan using neural networks, integrated into aviation maps at 95% accuracy.</p>
+
                 <p class="project-category">Research</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -840,7 +907,9 @@ methods to the current learning algorithm. Presented the improvements of the sys
                   <img src="./assets/images/project-video.jpg" alt="movement" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Movement Detection using Tensorial data</h3>
+                <h3 class="project-title">Movement Detection using Tensorial Data</h3>
+
+                <p class="project-desc" data-i18n="proj-movement">Multilinear subspace methods for recognising movement from tensorial video data.</p>
 
                 <p class="project-category">Research</p>
 
@@ -848,7 +917,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
             </li>
 
             <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -860,13 +929,15 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
                 <h3 class="project-title">Lightning Detection</h3>
 
+                <p class="project-desc" data-i18n="proj-lightning">CNPq-funded lightning detection across the Amazon, with UFPA and the University of Arizona.</p>
+
                 <p class="project-category">Research</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -878,13 +949,15 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
                 <h3 class="project-title">Hyperparameter Optimization</h3>
 
+                <p class="project-desc" data-i18n="proj-hyper">Bayesian and deterministic methods for tuning neural network hyperparameters - the core of my Ph.D.</p>
+
                 <p class="project-category">Research</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="game design">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -896,13 +969,15 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
                 <h3 class="project-title">Spheres - Genetic Algorithm in Pico8</h3>
 
+                <p class="project-desc" data-i18n="proj-spheres">A genetic algorithm you can watch converge, written for the PICO-8 fantasy console.</p>
+
                 <p class="project-category">Game design</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -914,13 +989,15 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
                 <h3 class="project-title">Nietzchebot</h3>
 
+                <p class="project-desc" data-i18n="proj-nietzche">A daily dose of artificial nihilism: an LLM fine-tuned on Nietzsche's works.</p>
+
                 <p class="project-category">Applications</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -931,6 +1008,8 @@ methods to the current learning algorithm. Presented the improvements of the sys
                 </figure>
 
                 <h3 class="project-title">Gokuri</h3>
+
+                <p class="project-desc" data-i18n="proj-gokuri">Swallow and cough recognition for a neckband wearable that monitors dysphagia risk, at 95% accuracy.</p>
 
                 <p class="project-category">Applications</p>
 
@@ -950,13 +1029,15 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
                 <h3 class="project-title">HELIX²</h3>
 
+                <p class="project-desc" data-i18n="proj-helix">A small arcade game built around DNA-strand mechanics, released on itch.io.</p>
+
                 <p class="project-category">Game design</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="research">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -967,6 +1048,8 @@ methods to the current learning algorithm. Presented the improvements of the sys
                 </figure>
 
                 <h3 class="project-title">Rioss</h3>
+
+                <p class="project-desc" data-i18n="proj-rioss">Autonomous oil-spill and vessel detection from satellite imagery for Brazil's marine territory (UNet + ensembles, +10% accuracy).</p>
 
                 <p class="project-category">Research</p>
 
@@ -984,7 +1067,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
 
       <!--
-        - #BLOG
+        - #PUBLICATIONS
       -->
 
       <article class="blog" data-page="publications">
@@ -993,274 +1076,189 @@ methods to the current learning algorithm. Presented the improvements of the sys
           <h2 class="h2 article-title" data-i18n="publications-title">Publications</h2>
         </header>
 
-        <section class="blog-posts">
+        <section class="publications-intro">
+          <p data-i18n="publications-intro">
+            Peer-reviewed work in evolutionary computation, nonlinear optimization, and machine learning.
+            Every entry links to its DOI.
+          </p>
 
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="FK-tensor" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Applied Soft Computing</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2021-09-20">Sep 20, 2021</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Multilinear clustering via tensor Fukunaga–Koontz transform with Fisher eigenspectrum regularization</h3>
-                </div>
-
+          <ul class="profile-links">
+            <li>
+              <a href="https://orcid.org/0000-0002-5948-691X" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="finger-print-outline"></ion-icon>
+                <span>ORCID</span>
               </a>
             </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="ADVM" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Entropy</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2020-09-14">Sep 14, 2020</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    A-DVM: A Self-Adaptive Variable Matrix Decision Variable Selection Scheme for Multimodal Problems</h3>
-                </div>
-
+            <li>
+              <a href="https://www.semanticscholar.org/search?q=Marco%20Mollinetti" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="school-outline"></ion-icon>
+                <span data-i18n="pub-profile-semantic">Semantic Scholar</span>
               </a>
             </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">IEEE Access</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2020-06-04"> Aug 4, 2020</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Game Theory and Social Interaction for Selection and Crossover Pressure Control in Genetic Algorithms: An Empirical Analysis to Real-Valued Constrained Optimization</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Hybrid Intelligent Systems</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2018-12-12">Dec 12, 2018</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Deterministic parameter selection of artificial bee colony based on diagonalization</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Tensor FK" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">BRACIS 2019</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2019-10-18">Oct 18, 2019</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Tensor Fukunaga-Koontz Transform for Hierarchical Clustering</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="Game Theory GA" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">IEEE CEC 2018</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2018-07-07">Jul 7, 2018</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Parametric analysis of iterated game environments as social interaction model for genetic algorithm to solve constrained engineering problems</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="ABC Neural Networks" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">ICNC-FSKD 2017</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2017-07-29">Jul 29, 2017</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Evolutionary artificial bee colony for neural networks training</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="ABC+ES" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Hybrid Intelligent Systems</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2016-11-15">Nov 15, 2016</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    ABC+ES: Combining artificial bee colony algorithm and evolution strategies on engineering design problems and benchmark functions</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Evolutionary ABC" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Hybrid Intelligent Systems</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2016-10-15">Oct 15, 2016</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Evolutionary quick artificial bee colony for constrained engineering design problems</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="Parallel GA" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">SoCPaR 2015</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2015-11-12">Nov 12, 2015</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    Parallel genetic algorithm with social interaction for solving constrained global optimization problems</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="ABC+ES GECCO" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">GECCO 2014</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2014-07-11">Jul 11, 2014</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">
-                    ABC+ ES: a novel hybrid artificial bee colony algorithm with evolution strategies</h3>
-                </div>
-
-              </a>
-            </li>
-
           </ul>
+        </section>
+
+        <section class="publications">
+
+          <ol class="publications-list">
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">BRACIS</span>
+                <span class="dot"></span>
+                <time datetime="2024">2024</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1007/978-3-031-79029-4_5" target="_blank" rel="noopener noreferrer">A Novel Genetic Algorithm Approach for Discriminative Subspace Optimization</a>
+
+              <p class="publication-authors">B. B. Gatto, <strong>M. A. F. Mollinetti</strong>, E. M. dos Santos, A. L. Koerich, W. S. da Silva Junior</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-journal">Journal</span>
+                <span class="publication-venue">Applied Soft Computing</span>
+                <span class="dot"></span>
+                <time datetime="2021">2021</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1016/j.asoc.2021.107899" target="_blank" rel="noopener noreferrer">Multilinear clustering via tensor Fukunaga&ndash;Koontz transform with Fisher eigenspectrum regularization</a>
+
+              <p class="publication-authors">B. B. Gatto, E. M. dos Santos, <strong>M. A. F. Mollinetti</strong>, K. Fukui</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-journal">Journal</span>
+                <span class="publication-venue">Entropy</span>
+                <span class="dot"></span>
+                <time datetime="2020">2020</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.3390/e22091004" target="_blank" rel="noopener noreferrer">A-DVM: A Self-Adaptive Variable Matrix Decision Variable Selection Scheme for Multimodal Problems</a>
+
+              <p class="publication-authors"><strong>M. A. F. Mollinetti</strong>, B. B. Gatto, M. T. R. Serra Neto, T. Kuno</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-journal">Journal</span>
+                <span class="publication-venue">IEEE Access</span>
+                <span class="dot"></span>
+                <time datetime="2020">2020</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1109/ACCESS.2020.3014577" target="_blank" rel="noopener noreferrer">Game Theory and Social Interaction for Selection and Crossover Pressure Control in Genetic Algorithms: An Empirical Analysis to Real-Valued Constrained Optimization</a>
+
+              <p class="publication-authors">R. L. Pereira, D. L. Souza, <strong>M. A. F. Mollinetti</strong>, M. T. R. Serra Neto, E. K. K. Yasojima, O. N. Teixeira, R. C. L. de Oliveira</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">BRACIS</span>
+                <span class="dot"></span>
+                <time datetime="2019">2019</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1109/BRACIS.2019.00035" target="_blank" rel="noopener noreferrer">Tensor Fukunaga-Koontz Transform for Hierarchical Clustering</a>
+
+              <p class="publication-authors">B. B. Gatto, <strong>M. A. F. Mollinetti</strong>, E. M. dos Santos, K. Fukui</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">Hybrid Intelligent Systems (HIS)</span>
+                <span class="dot"></span>
+                <time datetime="2018">2018</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1007/978-3-030-14347-3_9" target="_blank" rel="noopener noreferrer">Deterministic Parameter Selection of Artificial Bee Colony Based on Diagonalization</a>
+
+              <p class="publication-authors"><strong>M. A. F. Mollinetti</strong>, M. T. R. Serra Neto, T. Kuno</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">IEEE CEC</span>
+                <span class="dot"></span>
+                <time datetime="2018">2018</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1109/CEC.2018.8477925" target="_blank" rel="noopener noreferrer">Parametric Analysis of Iterated Game Environments as Social Interaction Model for Genetic Algorithm to Solve Constrained Engineering Problems</a>
+
+              <p class="publication-authors">R. L. Pereira, <strong>M. A. F. Mollinetti</strong>, M. T. R. Serra Neto, A. de Almeida Neto, D. L. Souza, E. K. Yasojima, O. N. Teixeira, R. C. L. de Oliveira</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">Hybrid Intelligent Systems (HIS)</span>
+                <span class="dot"></span>
+                <time datetime="2017">2017</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1007/978-3-319-91262-2_53" target="_blank" rel="noopener noreferrer">Evolutionary Quick Artificial Bee Colony for Constrained Engineering Design Problems</a>
+
+              <p class="publication-authors">O. N. Teixeira, M. T. R. Serra Neto, D. R. de Souza Alves, <strong>M. A. F. Mollinetti</strong>, F. dos Santos Ferreira, D. L. Souza, R. L. Pereira</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">ICNC-FSKD</span>
+                <span class="dot"></span>
+                <time datetime="2017">2017</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1109/FSKD.2017.8393309" target="_blank" rel="noopener noreferrer">Evolutionary Artificial Bee Colony for Neural Networks Training</a>
+
+              <p class="publication-authors">M. T. R. Serra Neto, <strong>M. A. F. Mollinetti</strong>, R. L. Pereira</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">Hybrid Intelligent Systems (HIS)</span>
+                <span class="dot"></span>
+                <time datetime="2015">2015</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1007/978-3-319-27221-4_5" target="_blank" rel="noopener noreferrer">ABC+ES: Combining Artificial Bee Colony Algorithm and Evolution Strategies on Engineering Design Problems and Benchmark Functions</a>
+
+              <p class="publication-authors"><strong>M. A. F. Mollinetti</strong>, D. L. Souza, R. L. Pereira, E. K. K. Yasojima, O. N. Teixeira</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">SoCPaR</span>
+                <span class="dot"></span>
+                <time datetime="2015">2015</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1109/SOCPAR.2015.7492772" target="_blank" rel="noopener noreferrer">Parallel Genetic Algorithm with Social Interaction for Solving Constrained Global Optimization Problems</a>
+
+              <p class="publication-authors">R. L. Pereira, E. K. Yasojima, R. M. S. de Oliveira, <strong>M. A. F. Mollinetti</strong>, O. N. Teixeira, R. C. L. de Oliveira</p>
+            </li>
+
+            <li class="publication-item">
+              <div class="publication-meta">
+                <span class="publication-type" data-i18n="pub-conference">Conference</span>
+                <span class="publication-venue">GECCO</span>
+                <span class="dot"></span>
+                <time datetime="2014">2014</time>
+              </div>
+
+              <a class="publication-title" href="https://doi.org/10.1145/2598394.2602277" target="_blank" rel="noopener noreferrer">ABC+ES: A Novel Hybrid Artificial Bee Colony Algorithm with Evolution Strategies</a>
+
+              <p class="publication-authors"><strong>M. A. F. Mollinetti</strong>, D. L. Souza, O. N. Teixeira</p>
+            </li>
+
+          </ol>
 
         </section>
 
@@ -1291,7 +1289,7 @@ methods to the current learning algorithm. Presented the improvements of the sys
 
           <h3 class="h3 form-title" data-i18n="form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" data-i18n-placeholder="form-name" placeholder="Full name" required data-form-input>
@@ -1305,6 +1303,8 @@ methods to the current learning algorithm. Presented the improvements of the sys
               <ion-icon name="paper-plane"></ion-icon>
               <span data-i18n="form-send">Send Message</span>
             </button>
+
+            <p class="form-note" data-form-status role="status" aria-live="polite"></p>
 
           </form>
 
