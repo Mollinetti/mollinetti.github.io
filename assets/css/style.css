@@ -732,23 +732,14 @@ main {
 
 .service-icon-box { margin-bottom: 10px; }
 
+/* inline SVGs: currentColor inherits the accent, so both themes work with no extra rules */
 .service-icon {
   display: block;
   width: 40px;
   height: 40px;
   margin: auto;
-  background-color: var(--accent-primary);
-  -webkit-mask: var(--icon) center / contain no-repeat;
-  mask: var(--icon) center / contain no-repeat;
+  color: var(--accent-primary);
 }
-
-/* urls live here so they resolve relative to this stylesheet */
-.service-icon--ml       { --icon: url('../images/icon-ml.svg'); }
-.service-icon--webdev   { --icon: url('../images/icon-webdev.svg'); }
-.service-icon--barchart { --icon: url('../images/icon-barchart.svg'); }
-.service-icon--genai    { --icon: url('../images/icon-genai.svg'); }
-.service-icon--game     { --icon: url('../images/icon-game.svg'); }
-.service-icon--tarot    { --icon: url('../images/icon-tarot.svg'); }
 
 .service-content-box { text-align: center; }
 
